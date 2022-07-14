@@ -46,10 +46,9 @@ body>div>h2{
     color:white;
     background-color: rgba(29, 179, 29, 0.612) ;
     border: solid rgba(29, 179, 29, 0.612);
-    border
-    border-radius: 5px;
-    width: 250px;
-    height: 50px;
+    border-radius:5px;
+    width:250px;
+    height:50px;
 }
 #false-button{
     font-family: 'Times New Roman', Times, serif ;
