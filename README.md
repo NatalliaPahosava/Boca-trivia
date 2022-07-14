@@ -1,7 +1,7 @@
 # App Trivia
 ## Demo
-See the [demo link](https://jsohn-plantapi.web.app/) on Firebase. 
+See the [demo link](https://boca-trivia.firebaseapp.com/) on Firebase. 
 
-![Demo screen shot](https://github.com/jsohndata/app-plantapi/blob/main/images/--demo-sample.png)
+![Demo screen shot](https://github.com/NatalliaPahosava/Boca-trivia/blob/main/img/--demo-trivia.png)
 
 
