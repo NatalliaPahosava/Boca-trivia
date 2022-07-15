@@ -7,6 +7,22 @@ const questions = {
             "answer": false
         },
         {
+            "question": "12 languages are written from right to left.",
+            "answer": true
+        },
+        {
+            "question": "Apple is the biggest technology company in South Korea",
+            "answer": false
+        },
+        {
+            "question": "The first dictionary was written by James",
+            "answer": false
+        },
+        {
+            "question": "Ferdinand Magellan named the Pacific Ocean.",
+            "answer": true
+        },
+        {
             "question": "The capital of California is Sacramento.",
             "answer": true
         },
@@ -38,6 +54,7 @@ const question = document.getElementById('question')
 let playerScore = 0
 //variable to keep track of what question you are on
 let questionIndex = 0
+let result=0
 //variable to keep track if you reached the last question 
 let didReachLastQuestion = false
 question.innerText = questions.questions[questionIndex].question
@@ -64,7 +81,8 @@ function nextQuestion() {
     questionIndex += 1
     if (questionIndex >= questions.questions.length) {
         didReachLastQuestion = true
-        const yourFinalScore = `Your score is ${playerScore} / ${questions.questions.length}.`
+        result=((playerScore/questions.questions.length)*100).toFixed(0)
+        const yourFinalScore = `Your score is ${result}%.`
         question.innerText = yourFinalScore
         shouldHideAnswerButtons(true)
     } else {
@@ -75,7 +93,8 @@ function nextQuestion() {
 function replay() {
     shouldHideAnswerButtons(false)
     playerScore = 0
-    questionIndex = 0
+    result=0
+    questionIndex = Math.floor(Math.random()*questions.questions.length)
     didReachLastQuestion = false
     question.innerText = questions.questions[questionIndex].question
 }
